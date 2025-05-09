@@ -1,0 +1,28 @@
+{
+  "name": "life-pre",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiaki-kanazawa/node_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiaki-kanazawa/node_test/issues"
+  },
+  "homepage": "https://github.com/chiaki-kanazawa/node_test#readme",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "ora": "^8.2.0"
+  },
+  "type": "module"
+}
