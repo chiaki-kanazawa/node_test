@@ -1,0 +1,9 @@
+.anshin_seimei_container{
+    height: 172.07px;
+    text-align: center;
+}
+.anshin_seimei_container img{
+    height: 90%;
+    margin:9px 0;
+    width: auto !important;
+}

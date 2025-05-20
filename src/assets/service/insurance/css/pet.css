@@ -1,0 +1,92 @@
+.list-wrap_pet {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em 0 0;
+}
+
+.list-wrap_pet-modal {
+    display: flex;
+    flex-flow: column;
+    margin: 1em 0 0;
+}
+
+/* モーダル部表示追加（20240813） */
+
+/* モーダルボタンcss */
+.modal-button {
+    cursor: pointer;
+}
+
+/* モーダル動作 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    animation-name: show;
+    animation-duration: 0.5s;
+}
+
+.modal-padding {
+    padding: 3%;
+}
+
+.modal-list-v2 {
+    width: 100%;
+    padding: 0;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    border: 1px solid;
+    width: 80%;
+    border-radius: 2rem;
+    border: #fff;
+}
+
+.conditions {
+    font-weight: bold;
+}
+
+.close {
+    color: #fff;
+    font-size: 5vw;
+    position: absolute;
+    top: -5vw;
+    right: -5vw;
+    cursor: pointer;
+}
+
+.unorder-list-m {
+    margin: 0 !important;
+}
+
+.unorder-list-about {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-padding {
+        padding: 10%;
+    }
+}
+
+/* モーダル動作アニメーション */
+@keyframes show {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

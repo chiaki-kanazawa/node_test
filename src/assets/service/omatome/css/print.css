@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* ******************************************************************
+
+	--print.css--
+
+	1. Layout setting
+
+****************************************************************** */
+
+
+/*==================================================================
+	1. Layout setting
+===================================================================*/
+body {
+	padding: 30px 20px 30px 40px;
+	line-height: 1.7;
+}
+p {
+	margin-bottom: 10px;
+}
+.title {
+	font-size: 24pt;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.inner {
+	font-size: 12pt;
+}
+table {
+	margin: 5px 0;
+}
+th {
+	text-align: center;
+	border: 1px solid #000;
+	padding: 5px;
+}
+td {
+	border: 1px solid #000;
+	padding: 5px;
+}

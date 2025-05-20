@@ -1,0 +1,48 @@
+/* Pick Upラベル　枠部分 */
+.triangle {
+    position: relative;
+}
+ 
+/* ラベル部分 左上に表示 */
+.triangle::before {
+    content: "";
+    top: 0;
+    left: 0;
+    border-bottom: 5em solid transparent;
+    border-left: 5em solid rgb(255, 0, 43); /* ラベルの色はここで変更 */
+    position: absolute;
+    z-index: 100;
+}
+
+.triangle::after {
+    content: "Pick Up";
+    display: block;
+    top: 13px;
+    transform: rotate(-45deg);
+    font-size: 1.4rem;
+    color: #fff; /* 文字色はここで変更 */
+    left: 0;
+    position: absolute;
+    z-index: 101;
+}
+
+.list-wrap_pet {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em 0 0;
+}
+
+@media only screen and (max-width:600px) {
+    .test {
+      color: black;
+    }
+  }@media  only screen and (min-width:1025px) {
+    .test {
+      color: pink;
+    }
+  }
+
+  /*0911_add*/
+  .text_dc441b_color{
+      color: #dc441b;
+  }

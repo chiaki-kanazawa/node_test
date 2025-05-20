@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/* ****************************************************************** 
+
+	--style.css--
+
+	1. Style setting
+		1-1. FontColor styles
+		1-2. Headline styles
+		1-3. LineList styles
+		1-4. Radius styles
+		1-5. Error styles
+		1-6. Table styles
+		1-7. Button styles
+		1-8. Pager styles
+		1-9. Search styles
+
+	2. Layout setting
+		2-1. Base styles
+		2-2. Header styles
+		2-3. Navi styles
+		2-4. Breadcrumbs styles
+		2-5. Keyv styles
+		2-6. Main styles
+		2-7. Side styles
+		2-8. Footer styles
+		
+	3.grid styles
+		3-1. Tablet grid styles
+		3-2. Mobile grid styles
+		
+
+****************************************************************** */
+
+/*==================================================================
+	1. Style setting
+===================================================================*/
+
+/* ------------------------------------------------------------------
+	1-1. FontColor styles
+-------------------------------------------------------------------*/
+html { color:#333; }
+/*a:link, a:visited { color:#06C; }*/
+.pcStyle a:hover {
+	color:#F30;
+	text-decoration:none;
+}
+.touchHover,
+.noTapColor,
+button { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+.strong{font-weight: bold;}
+
+/* ------------------------------------------------------------------
+	1-2. Headline styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-3. LineList styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-4. RadiusList styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-5. Error styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-6. Table styles
+-------------------------------------------------------------------*/
+
+/* Sheet styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-7 Button styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-8. Pager styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	1-9. Search styles
+-------------------------------------------------------------------*/
+
+
+/*==================================================================
+	2. Layout setting
+===================================================================*/
+
+/* ------------------------------------------------------------------
+	2-1. Base styles
+-------------------------------------------------------------------*/
+body {
+	min-width:320px;
+	color:#4C4C4C;
+	font-family:'メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Osaka,sans-serif;
+	font-size:16px;
+}
+#contents {
+	padding-bottom:30px;
+	line-height:1.7;
+}
+#noScript {
+	max-width:940px;
+	margin:20px auto;
+	padding:20px;
+	border:1px solid #FF8282;
+	background:#FFE0E6;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+/* ------------------------------------------------------------------
+	2-2. Header styles
+-------------------------------------------------------------------*/
+#logo {
+	float:left;
+	width:40%;
+	margin-top:7px;
+}
+.hBlock {
+	float:right;
+	width:100%;
+	text-align:right;
+}
+.hBlock > a {
+	display:inline-block;
+	vertical-align:top;
+}
+.hBlock span {
+	display:inline-block;
+	margin:16px 0 0 18px;
+	vertical-align:top;
+}
+
+/*	HeaderMenu styles
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+	2-3. Navi styles
+-------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------
+	2-4. Breadcrumbs styles
+-------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------
+	2-5. Keyv styles
+-------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------
+	2-6. Main styles
+-------------------------------------------------------------------*/
+.liststep {
+	margin-bottom: 60px;
+ margin-top: 40px;
+}
+.liststep li {
+	background: #bec9cf;
+	color: #fff;
+	font-weight: bold;
+	width: 25%;
+	float: left;
+	text-align: center;
+	padding: 26px 10px 26px 21px;
+	position: relative;
+}
+.liststep li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+.liststep li:last-child {
+	border-radius: 0 10px 10px 0;
+}
+.liststep li:after {
+	content: '';
+	position: absolute;
+	width: 11px;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	background: url(../img/contact/bd_normal.png) no-repeat right center;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+.liststep li:last-child:after {
+	width: 0;
+}
+.liststep li.ok {
+	background: url(../img/contact/icon_tick.png) no-repeat 18% center #bde4f3;
+	background-size: 31%;
+}
+.liststep li.ok:after {
+	background: url(../img/contact/bd_ok.png) no-repeat right center;
+	background-size: 100% 100%;
+}
+.liststep li.active {
+	background: #0597d0;
+}
+.liststep li.active:after {
+	background: url(../img/contact/bd_active.png) no-repeat right center;
+	background-size: 100% 100%;
+}
+
+/* ------------------------------------------------------------------
+	2-7. Side styles
+-------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------
+	2-8 Footer styles
+-------------------------------------------------------------------*/
+#footer {
+	clear:both;
+	position:relative;
+}
+.pageTop {
+	text-align:center;
+}
+.pageTop a {
+	position:absolute;
+	bottom:275px;
+	margin-left:-40px;
+}
+.pageTop a.fix {
+	position:fixed;
+	right:10px;
+	z-index:999999;
+}
+#footerInner {
+	padding:40px 3%;
+	background:#EAF1F5;
+	text-align:center;
+}
+.fLogo {
+	padding-bottom:20px;
+}
+#copyright a {
+	display:block;
+	margin-top:15px;
+	color:#333;
+	text-decoration:none;
+}
+#footer .txt_footer{
+	line-height: 1.7;
+}
+
+/*	page top styles
+-------------------------------------------------------------------*/
+
+
+/*	footer styles
+-------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------
+	3-1 Tablet grid styles
+-------------------------------------------------------------------*/
+@media only screen and  (max-width:1024px) {
+	#header {
+		width:100%;
+		padding:0 3%;
+	}
+	#logo {
+		width:auto;
+	}
+	.hBlock {
+		width:auto;
+	}
+	.hBlock > a {
+		margin-left:0;
+	}
+	
+}
+
+
+/* ------------------------------------------------------------------
+	3-2 Mobile grid styles
+-------------------------------------------------------------------*/
+@media only screen and (max-width:768px) {
+	#header {
+		padding:5px 3% 8px;
+	}
+	#logo img {
+		height:40px;
+	}
+	.hBlock > a,
+	.hBlock span {
+		display:inline-block;
+		vertical-align:middle;
+		margin:15px 0 0 15px;
+	}
+	.hBlock span {
+		cursor:pointer;
+	}
+	.pageTop a.fixed {
+		left:auto;
+		margin-left:0;
+	}
+	
+}
+@media screen and (max-width:660px) {
+	.liststep {
+		display: flex;
+	}
+	.liststep li {
+		display: flex;
+		align-items: center;
+	}
+	.liststep li.ok {
+		background-size: 50%;
+	}
+}
+@media screen and (max-width:480px) {
+	.liststep li {
+		padding: 10px 0px 10px 15px;
+	}
+}
